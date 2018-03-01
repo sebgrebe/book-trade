@@ -51,9 +51,9 @@ app.use(express.static('frontend/dist'));
 require('./routes/routes.js')(app,passport);
 
 //configuring server to handle real URLs. See https://github.com/ReactTraining/react-router/blob/v3/docs/guides/Histories.md#browserhistory
-// app.get('*', (req, res) => {
-//   res.sendFile(path.resolve(__dirname, 'frontend/dist', 'index.html'))
-// })
+app.get('/*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'frontend/dist', 'index.html'))
+})
 
 app.listen(port, () => console.log(`listening on ${ port }`))
 
