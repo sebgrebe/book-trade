@@ -45,13 +45,15 @@ app.use(cors({credentials: true, origin: true}))
 
 app.use(express.static('public/images'));
 
+app.use('/frontend/dist',express.static(path.join(_dirname, 'frontend/dist')))
+
 // load routes and pass in app and fully configured passport
 require('./routes/routes.js')(app,passport);
 
 //configuring server to handle real URLs. See https://github.com/ReactTraining/react-router/blob/v3/docs/guides/Histories.md#browserhistory
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'frontend/dist', 'index.html'))
-})
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, 'frontend/dist', 'index.html'))
+// })
 
 app.listen(port, () => console.log(`listening on ${ port }`))
 
