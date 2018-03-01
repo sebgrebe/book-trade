@@ -9,10 +9,8 @@ const passport = require('passport')
 const mongoose = require('mongoose')
 const session = require('express-session')
 const port = process.env.PORT || 8080;
-var User = require('./models/users')
 
 const path = require('path')
-const server = require('http').createServer()
 
 const app = express();
 
