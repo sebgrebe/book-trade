@@ -1,0 +1,21 @@
+.box {
+    width: 300px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    clear: both;
+}
+
+.warning {
+    background: rgba(205,92,92,0.3);
+    color: darkred;
+}
+
+.success {
+    background: rgba(50,205,50,0.3);
+    color: green
+}

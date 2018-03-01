@@ -1,0 +1,39 @@
+.btn {
+    width: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background: Transparent no-repeat !important;
+    border: none !important;
+    outline: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer
+}
+
+.edit {
+    float: right;
+}
+
+.form {
+
+}
+
+.info {
+    width: 300px;
+    height: 25px;
+    float: right;
+}
+
+.input {
+    font-size: 14px;
+    margin-bottom: 5px;
+    width: 200px;
+    display: inline-block;
+}
+
+.tag {
+    display: inline-block;
+}
