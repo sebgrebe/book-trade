@@ -45,8 +45,6 @@ app.use(cors({credentials: true, origin: true}))
 
 app.use(express.static('frontend/dist'));
 
-// app.use('/frontend/dist',express.static(path.join(__dirname, 'frontend/dist')))
-
 // load routes and pass in app and fully configured passport
 require('./routes/routes.js')(app,passport);
 
