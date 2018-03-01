@@ -1,9 +1,9 @@
 const addBook = require('../modules/addBook')
 const deleteBook = require('../modules/deleteBook')
 const getBooks = require('../modules/getBooks')
-const tradeAction = require('../modules/tradeaction')
-const getUsers = require('../modules/getusers')
-const updateProfile = require('../modules/updateprofile')
+const tradeAction = require('../modules/tradeAction')
+const getUsers = require('../modules/getUsers')
+const updateProfile = require('../modules/updateProfile')
 
 module.exports = function(app,passport) {
 
