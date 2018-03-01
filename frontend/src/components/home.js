@@ -11,7 +11,7 @@ const Home = ({state, actions}) => {
     return (
       <div>
         <h2>Books on Book-Trade</h2>
-        <h5><Link to={'/login'}>Login</Link> or <Link to={'/signup'}>sign up</Link> to start trading</h5>
+        <h5><Link to={'/login'}>Log in</Link> or <Link to={'/signup'}>sign up</Link> to start trading</h5>
         <div className={appStyles.container}>
           {books.length > 0 ? (
             books.map((book,i) =>

@@ -30,10 +30,10 @@ class Navbar extends Component {
         <button className={styles['navbar-toggler'] + " " + styles['navbar-toggler-right']} type="button" data-toggle="collapse" data-target="#options" aria-controls="options" aria-expanded="false" aria-label="Toggle navigation">
           <span className={styles['navbar-toggler-icon']}></span>
         </button>
-        <div className={styles.collapse + " " + styles['navbar-collapse']} id="options">
+        <div className={styles['navbar-collapse'] + ' ' + styles.collapse} id="options">
         {!this.props.state.authenticated ? (
           <ul className={styles['navbar-nav'] + " " + styles['ml-auto']}>
-            <li><a className={styles['nav-link']} href='/login'>Login</a></li>
+            <li><a className={styles['nav-link']} href='/login'>Log in</a></li>
           </ul> ) : (
           <ul className={styles['navbar-nav'] + " " + styles['ml-auto']}>
             <li><Link className={styles['nav-link']} to='/yourbooks'>Your Books</Link></li>

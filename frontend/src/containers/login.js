@@ -49,7 +49,7 @@ class Login extends Component {
               <input id='username' className={styles.input} placeholder='Username' />
               <input id='password' type='password' className={styles.input} placeholder='Password' />
               <div className={styles.btn_container}>
-                <button className={styles.btn}>Login</button>
+                <button className={styles.btn}>Log in</button>
               </div>
           </form>
           <p>Don't have an account? Sign up <Link to="/signup">here</Link></p>

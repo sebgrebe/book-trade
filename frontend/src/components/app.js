@@ -10,7 +10,6 @@ import Signup from '../containers/signup'
 import Yourbooks from './yourbooks'
 import Navbar from '../containers/navbar'
 import Profile from './profile'
-import '../styles/main.scss'
 
 const App = ( {state,actions} ) => {
 

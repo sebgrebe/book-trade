@@ -31,7 +31,7 @@ h2, h3, h4, h5 {
 .column {
   display: inline-grid;
   width: 100%;
-  @media (min-width: $break-md) {
+  @media screen and (min-width: $break-md) {
     width: 50%
   }
 }
